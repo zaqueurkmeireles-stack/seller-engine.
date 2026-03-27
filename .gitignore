@@ -1,3 +1,23 @@
 .env
 __pycache__/
 *.pyc
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# Backups
+*.bak
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
