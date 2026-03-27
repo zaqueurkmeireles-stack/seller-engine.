@@ -21,7 +21,7 @@ def run_fake_server():
 # --- CONFIGURAÇÕES ---
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_GEMINI_API_KEY"))
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
 # --- COMANDOS ---
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
