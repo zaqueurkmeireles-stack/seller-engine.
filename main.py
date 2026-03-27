@@ -40,7 +40,7 @@ if __name__ == '__main__':
     # Liga o Robô do Telegram
     app = Application.builder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.command, handle_message))
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     
     print("Bot e Site ativos. Pronto para o deploy!")
     app.run_polling()
